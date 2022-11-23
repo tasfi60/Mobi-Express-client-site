@@ -11,8 +11,8 @@
   }
   
   .main-div{
-      background: #a8fd20;
-      background-image: linear-gradient( 135deg, #99df19 10%, #33265C 100%);
+      background: #000000;
+      background-image: linear-gradient( 135deg, #9c9c9c 10%, #000000 100%);
       background-attachment: fixed;
       background-size: cover;
     
