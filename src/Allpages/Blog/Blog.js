@@ -8,6 +8,6 @@ const Blog = () => {
     );
 };
 
-//////////blog
+////////////blog
 
 export default Blog;
