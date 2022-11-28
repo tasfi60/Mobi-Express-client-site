@@ -17,3 +17,6 @@ Project description:
               10.I have used firebase, react libraries, etc. for this project.
               Technology Used: Html, CSS, Bootstrap, ReactBootstrap,ReactJs, Node.js, MongoDB, Firebase, GitHub, vercel.
               
+Admin email: admin20@gmail.com
+
+password: admin20
