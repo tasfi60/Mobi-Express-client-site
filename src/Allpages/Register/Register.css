@@ -1,0 +1,21 @@
+
+
+
+
+.form-container-reg{
+    
+   
+    background-image: url("../../images/signup.jpg");
+    /* background-image: linear-gradient(62deg, #8a4218 0%, #fcd69e 24%, #F7CE68 49%, #ffe492 75%, #ca8555 100%); */
+    margin-top: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.767);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+.form-bg{
+    background-color: rgb(134, 129, 129);
+    opacity: 0.9;
+    box-shadow: 2px 2px 40px rgba(48, 47, 49, 0.6);
+}

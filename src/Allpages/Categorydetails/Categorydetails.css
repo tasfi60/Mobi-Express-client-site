@@ -1,0 +1,98 @@
+
+
+
+.Title{
+    margin: 0px;
+}
+
+
+.categorydetails-section-container{
+
+    
+    margin-left: 330px;
+
+
+}
+
+
+.categorydetails-container{
+    width: 560px;
+    font-family: 'Fasthand', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Vollkorn', serif;
+    border: 1px solid rgb(206, 204, 202);
+    padding: 10px;
+    box-shadow: 5px 10px 18px #c3c1c1;
+    background-color: #e3dcd7;
+    background-image: linear-gradient(62deg, #f1ecec 0%, #ededed 24%, #e2e2e2 49%, #ededed 75%, #c8c5c5 100%);
+
+}
+
+.btn{
+    border: none;
+    background-color: #e00ce0;
+    background-image: linear-gradient(0deg, #d6d6d6 0%, #69c4ed 100%);
+    font-family: 'Fasthand', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Vollkorn', serif;
+    font-weight: 700;
+  
+  }
+
+
+ .category-img{
+    width: 540px;
+    height: 360px;
+ } 
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+
+
+    .categorydetails-section-container{
+
+    
+        margin-left: 20px;
+    
+    
+    }
+
+    .categorydetails-container{
+        width: 280px;
+        
+    
+    }
+   
+    
+        
+    
+}
+
+/* for tablet */
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+   
+    .categorydetails-section-container{
+
+    
+        margin-left: 50px;
+    
+    
+    }
+
+    .categorydetails-container{
+        width: 540px;
+        
+    
+    }
+    
+
+}
+
+/* for desktop */
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+
+    
+
+}

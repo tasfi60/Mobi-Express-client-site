@@ -1,0 +1,108 @@
+
+
+.font-family{
+    font-family: 'Fasthand', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Vollkorn', serif;
+    overflow: hidden;
+
+}
+
+.login-img{
+    width: 100%;
+    box-shadow: 5px 10px 18px #9b9797;
+}
+
+
+.login-form{
+    background-color: #d6d6d6;
+    background-image: linear-gradient(0deg, #ffefef 0%, #8f8f8f 100%);
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 5px 10px 18px #9b9797;
+    margin-left: 100px;
+    margin-top: -20px;
+    padding-top: 10px;
+    
+}
+
+.login-form h5{
+    padding-right: 180px;
+    margin-top: 40px;
+}
+
+.input-box{
+    box-shadow: 5px 10px 18px #9b9797;
+}
+
+.btnsign{
+background: #d1c8c8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #9ab6d5, #877372);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #adc3dc, #4d4645); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.btncontainer{
+
+    border-radius: 100px;
+    width: 300px;
+    color: black;
+    background: #a3a3a3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b5b5b5, #d0c4c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d4d2d2, #3b3b3b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+
+/* for mobile */
+@media only screen and (min-width: 320px) and (max-width: 480px){
+
+    .login-form{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+     
+    
+}
+
+
+/* for tablet */
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+    .login-form{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .login-img{
+        height: 80%;
+        box-shadow: 5px 10px 18px #9b9797;
+    }
+    
+    
+    
+      
+}
+
+
+/* for desktop */
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+
+    .login-form{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .login-img{
+        height: 80%;
+        box-shadow: 5px 10px 18px #9b9797;
+    }
+    
+    
+    
+      
+}

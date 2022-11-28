@@ -1,0 +1,83 @@
+
+
+
+
+.list-container{
+    width: 620px;
+    height: 220px;
+    font-family: 'Fasthand', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Vollkorn', serif;
+    border: 1px solid rgb(206, 204, 202);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #333131;
+    background-color: #e3dcd7;
+    background-image: linear-gradient(62deg, #a69d9d 0%, #ededed 24%, #f2f2f2 49%, #ededed 75%, #c8c5c5 100%);
+
+}
+
+.title{
+    display: flex;
+}
+
+.pay-btn{
+    width: 100px;
+    height: 50px;
+    margin-top: 60px;
+    margin-right: 60px;
+    background-color: rgb(234, 166, 255);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #6d6c6c;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+
+
+    .list-container{
+        width: 620px;
+        height: 520px;
+       
+    
+    }
+    .title{
+        display: block;
+        margin-top: -10px;
+        
+    }
+    .pay-btn{
+        margin-left: 50px;
+    }
+   
+    
+}
+
+/* for tablet */
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+   
+    .list-container{
+        width: 620px;
+        height: 520px;
+        
+       
+    
+    }
+    .title{
+        margin-top: -70px;
+        display: block;
+        margin-left: 20px;
+    }
+    
+
+}
+
+/* for desktop */
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+
+    
+
+}
