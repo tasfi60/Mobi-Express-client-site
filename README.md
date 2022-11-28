@@ -1,6 +1,8 @@
 Project Name: Mobi Express
 live website link: https://mobi-express-a55e9.web.app
 Project description:
+
+
               1.This project is a React responsive web application whose objective is to sell old mobile phones at a more affordable price.
               2.Its home page has the following elements: a banner, a product category, an advertisement (if any are available), user reviews of Mobi-Express, a blog, and a footer. Registration & Login Have Also Been Completed. These are all open-access routes. Dynamic and Page Routing have been implemented properly.
               3.Email authentication was carried out with firebase authentication when registering with an email address. Email and password have both been validated.
