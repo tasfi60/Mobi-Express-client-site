@@ -12,7 +12,7 @@ const Category = () => {
 
     const{data:category, isLoading} = useQuery({
        queryKey: ['category'],
-       queryFn: () => fetch('http://localhost:5000/category')
+       queryFn: () => fetch('https://mobile-resale-server-site.vercel.app/category')
        .then(res => res.json())
     })
 
@@ -22,7 +22,7 @@ const Category = () => {
     
 
     // useEffect(()=>{
-    //     fetch('http://localhost:5000/category')
+    //     fetch('https://mobile-resale-server-site.vercel.app/category')
     //     .then(res => res.json())
     //     .then(data => setCategory(data));
     // },[])

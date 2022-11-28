@@ -15,7 +15,7 @@ const Categorydetails = () => {
     console.log(cdetails);
     const { user} = useContext(AuthContext)
 
-    const url = "http://localhost:5000/users";
+    const url = "https://mobile-resale-server-site.vercel.app/users";
 
     const [alluser, setAlluser] = React.useState([]);
   
@@ -37,7 +37,7 @@ const Categorydetails = () => {
         uid:uid
       };
 
-      fetch('http://localhost:5000/wishlist',{
+      fetch('https://mobile-resale-server-site.vercel.app/wishlist',{
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'

@@ -39,7 +39,7 @@ const AllBuyers = () => {
 
     const {user,logOut} = useContext(AuthContext);
 
-  const url = "http://localhost:5000/users";
+  const url = "https://mobile-resale-server-site.vercel.app/users";
 
   const [alluser, setAlluser] = React.useState([]);
 
@@ -56,7 +56,7 @@ const AllBuyers = () => {
    
      
     if(agree){
-        fetch(`http://localhost:5000/users/${r}`,{
+        fetch(`https://mobile-resale-server-site.vercel.app/users/${r}`,{
             method: 'DELETE'
 
         })

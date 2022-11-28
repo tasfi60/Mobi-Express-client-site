@@ -4,7 +4,7 @@
 
 .list-container{
     width: 620px;
-    height: 220px;
+    height: 500px;
     font-family: 'Fasthand', cursive;
     font-family: 'Pacifico', cursive;
     font-family: 'Vollkorn', serif;
@@ -22,8 +22,8 @@
 }
 
 .pay-btn{
-    width: 100px;
-    height: 50px;
+    width: 30px;
+    height: 40px;
     margin-top: 60px;
     margin-right: 60px;
     background-color: rgb(234, 166, 255);
@@ -50,6 +50,8 @@
     }
     .pay-btn{
         margin-left: 50px;
+        margin-top: -50px;
+        width: 30px;
     }
    
     
@@ -67,10 +69,16 @@
     
     }
     .title{
-        margin-top: -70px;
+        margin-top: -120px;
         display: block;
-        margin-left: 20px;
+        margin-left: 80px;
     }
+    .pay-btn{
+        margin-left: 100px;
+        margin-top: -100px;
+        width: 30px;
+    }
+   
     
 
 }

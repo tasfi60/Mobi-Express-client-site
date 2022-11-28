@@ -44,7 +44,7 @@ const MyProduct = () => {
       
 
 
-    const url = `http://localhost:5000/category/category_details?displayName=${user.displayName}`;
+    const url = `https://mobile-resale-server-site.vercel.app/category/category_details?displayName=${user.displayName}`;
 
     const { data: products = [] } = useQuery({
         queryKey: ['products', user?.displayName],
@@ -70,7 +70,7 @@ const MyProduct = () => {
         }
 
 
-                 fetch('http://localhost:5000/addCollection', {
+                 fetch('https://mobile-resale-server-site.vercel.app/addCollection', {
                      method: 'PUT',
                      headers: {
                          'content-type': 'application/json'
@@ -95,7 +95,7 @@ const MyProduct = () => {
      
        console.log(r)
       if(agree){
-          fetch(`http://localhost:5000/category/${r}`,{
+          fetch(`https://mobile-resale-server-site.vercel.app/category/${r}`,{
               method: 'DELETE'
   
           })

@@ -44,7 +44,7 @@ const Allseller = () => {
 
     const {user,logOut} = useContext(AuthContext);
 
-  const url = "http://localhost:5000/users";
+  const url = "https://mobile-resale-server-site.vercel.app/users";
 
   const [alluser, setAlluser] = React.useState([]);
 
@@ -66,7 +66,7 @@ const Allseller = () => {
 });
 
 const handleVerifySeller = id => {
-    fetch(`http://localhost:5000/users/seller/${id}`, {
+    fetch(`https://mobile-resale-server-site.vercel.app/users/seller/${id}`, {
         //method: 'PUT'
         method: 'PUT',
         headers: {
@@ -88,7 +88,7 @@ const handleVerifySeller = id => {
    
      
     if(agree){
-        fetch(`http://localhost:5000/users/${r}`,{
+        fetch(`https://mobile-resale-server-site.vercel.app/users/${r}`,{
             method: 'DELETE'
 
         })
@@ -133,7 +133,7 @@ const handleVerifySeller = id => {
 
             <>
             {
-                row.usertype === "Seller"?
+                row.usertype === "seller"?
                 <>
                 
                 <StyledTableRow key={row._id}>

@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
-import toast from 'react-hot-toast';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Modal.css';
 
@@ -11,7 +11,11 @@ const Modals = ({item,item1,img}) => {
   
   const [show, setShow] = useState(false);
   const {user} = useContext(AuthContext);
-  const handleClose = () => setShow(false)
+  const handleClose = () =>
+  {
+    setShow(false)
+   
+  } 
   const handleShow = () => setShow(true);
 
   console.log(img);
@@ -40,7 +44,7 @@ const Modals = ({item,item1,img}) => {
 
     }
 
-    fetch('http://localhost:5000/bookings',{
+    fetch('https://mobile-resale-server-site.vercel.app/bookings',{
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
@@ -52,9 +56,14 @@ const Modals = ({item,item1,img}) => {
                     console.log(data)
                     if(data.acknowledged){
                         form.reset();
+                        
+                          toast.success('Successfully Booked!');
+                         
+                      
                         setShow(false);
                        
-                      
+                       
+
                         
                     }
                     
@@ -74,7 +83,7 @@ const Modals = ({item,item1,img}) => {
           <button className='btn mt-3' variant="primary" onClick={handleShow}>
         BOOK NOW
       </button>
-
+      <ToastContainer />
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>BOOK NOW!</Modal.Title>

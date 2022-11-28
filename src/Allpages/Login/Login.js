@@ -119,7 +119,7 @@ const Login = () => {
 
   const{email,displayName,photoURL} = user;
   const userinfo = {email,displayName,photoURL,usertype}
-  fetch('http://localhost:5000/users',{
+  fetch('https://mobile-resale-server-site.vercel.app/users',{
           method: 'POST',
           headers: {
               'content-type': 'application/json'
@@ -232,7 +232,7 @@ export default Login;
 
 //   const{email,displayName,photoURL} = user;
 //   const userinfo = {email,displayName,photoURL,usertype}
-//   fetch('http://localhost:5000/users',{
+//   fetch('https://mobile-resale-server-site.vercel.app/users',{
 //           method: 'POST',
 //           headers: {
 //               'content-type': 'application/json'

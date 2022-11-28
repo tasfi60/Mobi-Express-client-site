@@ -23,7 +23,7 @@ const Header = () => {
   const {user,logOut} = useContext(AuthContext);
   console.log(user)
 
-  const url = `http://localhost:5000/users?email=${user?.email}`;
+  const url = `https://mobile-resale-server-site.vercel.app/users?email=${user?.email}`;
 
   const [usertypes, setUsertype] = React.useState();
 

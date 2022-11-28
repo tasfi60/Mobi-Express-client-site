@@ -15,7 +15,7 @@ const Wishlist = () => {
     console.log(user);
     const [mybook, setMybooking] = useState([]);
 
-    const url = `http://localhost:5000/wishlist/${user?.uid}`;
+    const url = `https://mobile-resale-server-site.vercel.app/wishlist/${user?.uid}`;
 
     const { data: wishlist = [] } = useQuery({
         queryKey: ['wishlist', user?.email],
@@ -57,7 +57,7 @@ const Wishlist = () => {
         <div>
              <div className='m-5 p-5 fs-2 Service-title-container Font-style'>
             {
-                wishlist.length?<h4 className='fs-2 bg-dark w-25 mx-auto text-white rounded shadow p-2'>Wishlists </h4> : <div className='m-5 p-5'>No wishlist were made..<FaSadTear className='container'></FaSadTear></div>
+                wishlist.length?<h4 className='fs-2 bg-dark w-50 mx-auto text-white rounded shadow p-2'>Wishlists </h4> : <div className='m-5 p-5'>No wishlist were made..<FaSadTear className='container'></FaSadTear></div>
             }
            </div>
            
@@ -90,7 +90,7 @@ const Wishlist = () => {
                 </small>
                 
               </div>
-              <button className='pay-btn container' >Payment</button>
+              <button className='pay-btn container w-25' >Payment</button>
             </div>
             
           </div>

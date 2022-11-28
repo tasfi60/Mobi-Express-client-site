@@ -70,7 +70,7 @@ const Register = () => {
             usertype:usertype 
         };
 
-        fetch('http://localhost:5000/users', {
+        fetch('https://mobile-resale-server-site.vercel.app/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

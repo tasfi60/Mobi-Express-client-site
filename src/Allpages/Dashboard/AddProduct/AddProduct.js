@@ -52,7 +52,7 @@ const AddProduct = () => {
 
         console.log(product);
 
-        fetch('http://localhost:5000/category', {
+        fetch('https://mobile-resale-server-site.vercel.app/category', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -65,10 +65,12 @@ const AddProduct = () => {
                 if (data.acknowledged) {
 
                     form.reset();
-                      navigate('/dashboard/MyProduct');
+                    toast.success('Successfully Added!');
+                    navigate('/dashboard/MyProduct');
+                      
                    
                 }
-               
+                
                
                     
             })

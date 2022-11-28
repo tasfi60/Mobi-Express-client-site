@@ -36,7 +36,7 @@ export const routes = createBrowserRouter([
             {
                 path:'/category/:category_id',
                 loader: async ({params}) => {
-                    return fetch(`http://localhost:5000/category/${params.category_id}`)
+                    return fetch(`https://mobile-resale-server-site.vercel.app/category/${params.category_id}`)
                      
                 },
                 element: <PrivateRoute><Categorydetails></Categorydetails></PrivateRoute> 
@@ -93,7 +93,7 @@ export const routes = createBrowserRouter([
             {
                 path:'/dashboard/Payment/:id',
                 loader: async ({params}) => {
-                    return fetch(`http://localhost:5000/bookings/${params.id}`)
+                    return fetch(`https://mobile-resale-server-site.vercel.app/bookings/${params.id}`)
                      
                 },
                 element:<Payment></Payment> 

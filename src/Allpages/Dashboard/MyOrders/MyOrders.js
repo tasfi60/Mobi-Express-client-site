@@ -14,7 +14,7 @@ const MyOrders = () => {
     console.log(user);
     const [mybook, setMybooking] = useState([]);
 
-    const url = `http://localhost:5000/bookings?email=${user?.email}`;
+    const url = `https://mobile-resale-server-site.vercel.app/bookings?email=${user?.email}`;
 
     const { data: bookings = [] } = useQuery({
         queryKey: ['bookings', user?.email],
